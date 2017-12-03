@@ -1,0 +1,9 @@
+snippet doc_l "/* Inline comment */" b
+/* ${1:comment} */
+$0
+endsnippet
+
+snippet doc_vl "/* @var comment $variable */" b
+/* @var ${1:comment} $${2:variable} */
+$0
+endsnippet
