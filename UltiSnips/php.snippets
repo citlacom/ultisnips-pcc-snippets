@@ -39,3 +39,19 @@ endsnippet
 snippet $t "$this->" b
 $this->$0
 endsnippet
+
+snippet dbp "Backtrace to print"
+debug_print_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);$0
+endsnippet
+
+snippet dbv "Backtrace to variable"
+$backtrace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);$0
+endsnippet
+
+snippet dbp "Xdebug breakpoint"
+xdebug_break();$0
+endsnippet
+
+snippet vex "Var export variable."
+var_export($0);
+endsnippet
