@@ -7,3 +7,35 @@ snippet doc_vl "/* @var comment $variable */" b
 /* @var ${1:comment} $${2:variable} */
 $0
 endsnippet
+
+snippet fun_pro "Protected function" b
+protected function $1($2) {
+	$0
+}
+endsnippet
+
+snippet fun_pri "Private function" b
+private function $1($2) {
+	$0
+}
+endsnippet
+
+snippet fun_pub "Public function" b
+public function $1($2) {
+	$0
+}
+endsnippet
+
+snippet fun__ "Constructor function" b
+${1:public} function __construct($2) {
+	$0
+}
+endsnippet
+
+snippet $t= "$this->property = $value" b
+$this->$1 = $$1;$0
+endsnippet
+
+snippet $t "$this->" b
+$this->$0
+endsnippet
