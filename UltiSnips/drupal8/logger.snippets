@@ -1,0 +1,16 @@
+# General snippets
+
+snippet loe "Log error message for debug."
+$message = sprintf('$1', $2);
+\Drupal::logger('${3:module}')->error($message);
+endsnippet
+
+snippet lon "Log notice message for debug."
+$message = sprintf('$1', $2);
+\Drupal::logger('${3:module}')->notice($message);
+endsnippet
+
+snippet lod "Log debug variable."
+$message = sprintf('$1', print_r($2, 1));
+\Drupal::logger('${3:module}')->notice($message);
+endsnippet
