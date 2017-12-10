@@ -1,0 +1,6 @@
+snippet fun_plug "Function with plugin name."
+" ${3:function_description}
+function! `!v expand('%:t:r:r')`#${1:function_name}(${2:parameters})
+		$4
+endfunction
+endsnippet
