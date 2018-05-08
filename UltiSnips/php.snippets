@@ -55,3 +55,12 @@ endsnippet
 snippet vex "Var export variable."
 var_export($0);
 endsnippet
+
+snippet txhp "Tidaways Xhprof profiling."
+tideways_xhprof_enable(TIDEWAYS_XHPROF_FLAGS_MEMORY | TIDEWAYS_XHPROF_FLAGS_CPU);
+$data = tideways_xhprof_disable();
+file_put_contents(
+    "/tmp/" . uniqid() . ".so.xhprof",
+    serialize($data)
+);
+endsnippet
